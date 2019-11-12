@@ -1,0 +1,150 @@
+/* nunito-regular - latin_vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v11-latin_vietnamese-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('../fonts/nunito-v11-latin_vietnamese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nunito-v11-latin_vietnamese-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nunito-v11-latin_vietnamese-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nunito-v11-latin_vietnamese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nunito-v11-latin_vietnamese-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	font-family: 'Nunito', sans-serif !important;
+	background-color: #f3f5f7;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#top, header, main, footer {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#top {
+	line-height: 35px;
+	background-color: #000;
+	color: #fff;
+	text-align: right;
+}
+
+#top a {
+	color: #fff;
+	margin-right: 5px;
+}
+
+#top a:hover {
+	color: #800080;
+}
+
+header {
+	margin-top: 5px;
+}
+
+#logo {
+	width: 250px;
+	float: left;
+}
+
+#logo img {
+	width: 100%;
+}
+
+#search {
+	float: left;
+	width: 700px;
+	line-height: 60px;
+	text-align: center;
+}
+
+#search input[type="text"] {
+	width: 450px;
+	line-height: 35px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+#search input[type="text"]::placeholder {
+	color: #f00;
+	font-style: italic;
+}
+
+#search input[type="submit"] {
+	line-height: 35px;
+	width: 100px;
+	font-size: 16px;
+	background-color: #000;
+	border-radius: 5px;
+	color: #fff;
+}
+
+#cart {
+	width: 250px;
+	float: right;
+	line-height: 60px;
+}
+
+main {
+	height: 520px;
+	position: relative;
+}
+
+main #menu {
+	position: absolute;
+	float: left;
+	width: 20%;
+	height: 520px;
+}
+
+main #menu div.category {
+	border-bottom: 1px solid #aca2a2;
+	background: #000;
+	line-height: 35px;
+	padding-left: 5px;
+}
+
+main #menu div.category:last-child {
+	border-top: 1px solid #aca2a2;
+}
+
+main #menu div.category p {
+	color: #a3c42d;
+}
+
+main #menu ul li {
+	padding: 5px 0 0 35px;
+	border-top: 1px solid #aca2a2;
+}
+
+main #menu ul li a {
+	color: #fff;
+}
+
+main #product {
+	position: absolute;
+	right: 0;
+	width: 80%;
+	border: 1px solid green;
+	height: 520px;
+}
+
+footer {
+	height: 150px;
+	border: 1px solid #800080;
+	background-color: #D3D3D3;
+}
