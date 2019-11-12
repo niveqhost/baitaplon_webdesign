@@ -48,7 +48,7 @@ ul {
 }
 
 #top a:hover {
-	color: #800080;
+	color: #a3c42d;
 }
 
 header {
@@ -97,6 +97,10 @@ header {
 	width: 250px;
 	float: right;
 	line-height: 60px;
+}
+
+#cart i {
+	color: #000;
 }
 
 main {
