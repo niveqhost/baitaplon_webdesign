@@ -1,17 +1,17 @@
 main {
-	height: 550px;
+	height: 600px;
 }
 
 main #register_area {
 	float: left;
 	width: 60%;
-	height: 450px;
+	height: 500px;
 }
 
 main #login_area {
 	float: left;
 	width: 40%;
-	height: 450px;
+	height: 500px;
 }
 #register_area form p {
 	margin: 5px 0;
@@ -73,4 +73,10 @@ main #login_area {
 	width: 400px;
 	color: #fff;
 	font-size: 16px;
+}
+
+#msgName, #msgEmail, #msgPassword, #msgPhone {
+	display: none;
+	color: #f00;
+	margin-left: 150px;
 }

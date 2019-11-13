@@ -40,24 +40,28 @@
 	<main>
 		<div id="register_area">
 			<h2>ĐĂNG KÝ THÀNH VIÊN</h2>
-			<form action="#" method="post">
-				<p>Lưu ý: Các trường có dấu (*) bắt buộc phải nhập!</p>
+			<form action="#" method="post" id="register_form">
+				<span></span>Lưu ý: Các trường có dấu (*) bắt buộc phải nhập!</span>
 				<h4>Thông tin đăng nhập</h4>
-				<label>Email(*) : </label>
-				<input id="txtEmail" type="text" name="email" placeholder="Địa chỉ E-mail ...">
+				<label>Email (*) : </label>
+				<input id="txtEmail" type="text" name="email">
+				<span id="msgEmail"></span>
 				<br>
-				<label>Mật khẩu(*): </label>
-				<input type="password" name="password" id="txtPassword" placeholder="Mật khẩu">
+				<label>Mật khẩu (*): </label>
+				<input type="password" name="password" id="txtPassword">
+				<span id="msgPassword"></span>
 				<br>
 				<h4>Thông tin cá nhân</h4>
 				<label>Họ tên (*):</label>
 				<input type="text" name="name" id="txtName">
+				<span id="msgName"></span>
 				<br>
 				<label>Địa chỉ:</label>
 				<input type="text" name="address" id="txtAddress">
 				<br>
 				<label>Số điện thoại (*):</label>
 				<input type="text" name="phone" id="txtPhone">
+				<span id="msgPhone"></span>
 				<br>
 				<label>Thành phố:</label>
 				<select>
@@ -71,7 +75,7 @@
 				<input type="radio" name="gender" value="male" checked> <span>Nam</span>
 				<input type="radio" name="gender" value="female"> <span>Nữ</span>
 				<br>
-				<input type="submit" name="submit" value="ĐĂNG KÝ NGAY">
+				<input id="btnRegister" type="submit" name="submit" value="ĐĂNG KÝ NGAY">
 			</form>
 		</div>
 		<div id="login_area">
@@ -126,6 +130,7 @@
 		<div style="clear: both;"></div>
 	</footer>
 
+	<script type="text/javascript" src="./js/register.js"></script>
 	<!-- Jquery and Bootstrap library -->
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>

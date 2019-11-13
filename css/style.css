@@ -30,6 +30,10 @@ ul {
 	list-style-type: none;
 }
 
+br {
+	display: none;
+}
+
 #top, header, main, footer {
 	margin: 0 auto;
 	width: 1200px;
