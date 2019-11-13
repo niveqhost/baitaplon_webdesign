@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Siêu thị điện máy Pico</title>
+	<title>Đăng ký thành viên</title>
 	<link rel="icon" type="shortcut icon" href="./images/shopping_cart.ico">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/register_page.css">
 	<!-- Bootstrap and Fontawesome Library -->
 	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="./fonts/css/all.min.css">
@@ -37,40 +38,55 @@
 		</div>
 	</header>
 	<main>
-		<div id="menu">
-			<div class="category">
-				<p>Máy tính</p>
-				<div class="sub-category">
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính xách tay</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính để bàn</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính bảng</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="category">
-				<p>Điện thoại di động</p>
-			</div>
-			<div class="category">
-				<p>Phụ kiện số</p>
-				<div class="sub-category">
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Chuột máy tính</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Bàn phím</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Loa máy tính</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Bộ phát sóng wifi</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> USB</a></li>
-					</ul>
-				</div>
-				<div class="category">
-					<p>Kỹ thuật số</p>
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy ảnh</a></li>
-					</ul>
-				</div>				
-			</div>
+		<div id="register_area">
+			<form action="#" method="post">
+				<p>Lưu ý: Các trường có dấu (*) bắt buộc phải nhập!</p>
+				<h4>Thông tin đăng nhập</h4>
+				<label>Email(*) : </label>
+				<input id="txtEmail" type="text" name="email" placeholder="Địa chỉ E-mail ...">
+				<br>
+				<label>Mật khẩu(*): </label>
+				<input type="password" name="password" id="txtPassword" placeholder="Mật khẩu">
+				<br>
+				<h4>Thông tin cá nhân</h4>
+				<label>Họ tên (*):</label>
+				<input type="text" name="name" id="txtName">
+				<br>
+				<label>Địa chỉ:</label>
+				<input type="text" name="address" id="txtAddress">
+				<br>
+				<label>Số điện thoại (*):</label>
+				<input type="text" name="phone" id="txtPhone">
+				<br>
+				<label>Thành phố:</label>
+				<select>
+					<option>-- Chọn thành phố --</option>
+					<option value="HN">Hà Nội</option>
+					<option value="HCM">TP.HCM</option>
+					<option value="Hue">Huế</option>
+				</select>
+				<br>
+				<label>Giới tính: </label>
+				<input type="radio" name="gender" value="male" checked> <label>Nam</label>
+				<input type="radio" name="gender" value="female"> <label>Nữ</label>
+				<br>
+				<input type="submit" name="submit" value="ĐĂNG KÝ NGAY">
+			</form>
 		</div>
-		<div id="product"></div>
+		<div id="login_area">
+			<h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+			<p>Nếu bạn đã có tài khoản</p>
+			<a href="login_page.html">
+				ĐĂNG NHẬP NGAY <br>
+				(Để hưởng ưu đãi cho nhiều thành viên)
+			</a>
+			<h2>CÂU HỎI THƯỜNG GẶP</h2>
+			<p>Hướng dẫn mở Tài khoản</p>
+			<p>Không nhận được mail xác nhận kích hoạt tài khoản, tôi phải làm gì?</p>
+			<p>Làm thế nào tôi có thể thay đổi, cập nhật thông tin tài khoản sau khi đăng ký thành công?</p>
+			<p>Quên mật khẩu tài khoản, làm cách nào tôi phục hổi lại được?</p>
+			<p>Làm thế nào để tôi xem được điểm thẻ, cách liên kết thẻ điện tử với thẻ thành viên nhựa?</p>
+		</div>
 		<div style="clear: both;"></div>
 	</main>
 	<footer>

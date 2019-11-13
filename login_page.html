@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Siêu thị điện máy Pico</title>
+	<title>Đăng nhập tài khoản</title>
 	<link rel="icon" type="shortcut icon" href="./images/shopping_cart.ico">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/login_page.css">
 	<!-- Bootstrap and Fontawesome Library -->
 	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="./fonts/css/all.min.css">
@@ -37,40 +38,35 @@
 		</div>
 	</header>
 	<main>
-		<div id="menu">
-			<div class="category">
-				<p>Máy tính</p>
-				<div class="sub-category">
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính xách tay</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính để bàn</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy tính bảng</a></li>
-					</ul>
+		<p><span>Trang chủ</span> > Đăng nhập tài khoản</p>
+		<div id="login_area">
+			<h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+			<p>Nếu bạn đã có tài khoản, vui lòng đăng nhập</p>
+			<form action="#" method="post">
+				<div>
+					<input type="text" name="email" id="txtEmail" placeholder="E-mail">
+					<br>
+					<input type="password" name="password" id="txtPassword" placeholder="Mật khẩu">
 				</div>
-			</div>
-			<div class="category">
-				<p>Điện thoại di động</p>
-			</div>
-			<div class="category">
-				<p>Phụ kiện số</p>
-				<div class="sub-category">
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Chuột máy tính</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Bàn phím</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Loa máy tính</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Bộ phát sóng wifi</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> USB</a></li>
-					</ul>
+				<input type="checkbox" name="cb_Remember" id="cb_Remember">
+				<label for="cb_Remember">Nhớ tôi lại</label>
+				<br>
+				<div id="row">
+					<input type="submit" name="submit" value="ĐĂNG NHẬP" id="btn_submit">
+					<a href="#">Bạn quên mật khẩu?</a>
+					<a href="#">Yêu cầu kích hoạt lại tài khoản?</a>
 				</div>
-				<div class="category">
-					<p>Kỹ thuật số</p>
-					<ul>
-						<li><a href="#"><i class="fas fa-chevron-right"></i> Máy ảnh</a></li>
-					</ul>
-				</div>				
-			</div>
+			</form>
 		</div>
-		<div id="product"></div>
+		<div id="register_area">
+			<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+			<h4>Những lợi ích khi đăng ký thành viên:</h4>
+			<p>Quản lý và kiểm tra trạng thái đơn hàng thật dễ dàng</p>
+			<p>Quản lý điểm thẻ tích lũy khi mua hàng</p>
+			<p>Quản lý những sản phẩm yêu thích đã lưu lại</p>
+			<p>Còn chờ gì nữa! Bạn hãy tạo ngay 1 tài khoản dễ dàng chỉ trong vài phút</p>
+			<a href="register_page.html">ĐĂNG KÝ NGAY</a>
+		</div>
 		<div style="clear: both;"></div>
 	</main>
 	<footer>

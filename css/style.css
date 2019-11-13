@@ -106,6 +106,7 @@ header {
 main {
 	height: 520px;
 	position: relative;
+	margin-top: 10px;
 }
 
 main #menu {
@@ -148,7 +149,12 @@ main #product {
 }
 
 footer {
-	height: 150px;
+	height: 180px;
 	border: 1px solid #800080;
 	background-color: #D3D3D3;
+}
+
+#service, #policy, #about, #contact_us {
+	float: left;
+	width: 25%;
 }
