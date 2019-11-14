@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		/* --- Regurlar Expression --- */
 		let phoneCheck = /^[0][0-9]{9}$/;
 		let passCheck = /^[A-Za-z][0-9a-zA-Z]{7,}$/;
-		let emailCheck = //;
+		// let emailCheck = //;
 		let nameCheck = /[^_#&<>\"~;$^%{}?\d]{1,6}$/g;
+
 		/* --- Kiểm tra trường email --- */
 		if (email == "") {
 			msgEmail.style.display = "block";
@@ -62,7 +63,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			count += 1;
 		}
 		else {
-			msgName.style.display = "none";
+			if(nameCheck.test(name) == false) {
+				msgName.style.display = "block";
+				msgName.innerText = "Họ tên bắt đầu bằng chữ cái, không chứa số và các kí tự đặc biệt";
+				count += 1;
+			}
+			else {
+				msgName.style.display = "none";
+			}
 		}
 
 		/* --- Kiểm tra trường số điện thoại --- */
