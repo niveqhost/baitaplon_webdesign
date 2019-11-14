@@ -107,6 +107,10 @@ header {
 	color: #000;
 }
 
+#cart i:hover {
+	color: #3498db;
+}
+
 main {
 	height: 520px;
 	position: relative;

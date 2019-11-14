@@ -1,3 +1,7 @@
+main {
+	height: 450px;
+}
+
 main p {
 	color: #1C0C06;
 	margin-bottom: 15px;
@@ -6,13 +10,13 @@ main p {
 main #login_area {
 	float: left;
 	width: 50%;
-	height: 500px;
+	height: 450px;
 }
 
 main #register_area {
 	float: left;
 	width: 50%;
-	height: 500px;
+	height: 450px;
 }
 
 #login_area h2 {
@@ -31,7 +35,7 @@ main #register_area {
 	display: inline-block;
 	width: 80%;
 	border: none;
-	margin: 20px 5px 15px 15px;
+	margin: 10px 5px 15px 15px;
 	height: 35px;
 	font-size: 16px;
 	padding-left: 15px;
@@ -43,4 +47,55 @@ main #register_area {
 	cursor: pointer;
 }
 
+#login_area .row input[type="submit"] {
+	background-color: #f5791f;
+	border: none;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px;
+	margin-left: 15px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: .4s;
+}
+
+#login_area .row input[type="submit"]:hover {
+	background-color: #d35400;
+}
+
+#login_area .row div a {
+	color: #3498db;
+}
+
+#login_area .row div a:hover {
+	color: #1f2228;
+}
+
+#register_area h2 {
+	background-color: #2ecc71;
+	color: #fff;
+	padding: 7px 0 7px 7px;
+}
+
+#register_area h4 {
+	margin: 10px;
+}
+
+#register_area p {
+	margin-left: 15px;
+}
+
+#register_area a {
+	background-color: #34495e;
+	color: #fff;
+	padding: 12px;
+	border-radius: 5px;
+	margin: 15px 0 0 15px;
+	display: inline-block;
+	transition: .4s;
+}
+
+#register_area a:hover {
+	background-color: #2c3e50;
+}
 
