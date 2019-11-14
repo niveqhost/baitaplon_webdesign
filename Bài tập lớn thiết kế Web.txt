@@ -1,0 +1,38 @@
+BÁO CÁO BÀI TẬP LỚN MÔN THIẾT KẾ WEB
+
+I. Giới thiệu sơ bộ về hệ thống
+1. Sơ lược về hệ thống
+2. Nghiệp vụ của hệ thống ( giới thiệu bài toán )
+Hệ thống thiết kế nhằm phục vụ mọi đối tượng khách hàng có nhu cầu mua sắm tại siêu thị và đáp ứng yêu cầu quản lí siêu thị của chủ siêu thị
+3. Mục đích yêu cầu
+
+II. Khảo sát phân tích
+1. Tìm hiểu các website đã có cùng chủ đề
+Trang web được thiết kế dựa trên mẫu có sẵn được tham khảo tại địa chỉ: https://pico.vn
+2. Trình bày các đối tượng sử dụng
+Các đối tượng sử dụng hệ thống được xác định như sau:
++ Chủ siêu thị
++ Khách mua hàng
+-Khách hàng là thành viên
+-Khách vãng lai
+
+3. Trình bày các chức năng cơ bản cho từng đối tượng
++ Chức năng đối với chủ siêu thị: Quản lý đơn hàng, Quản lý sản phẩm
++ Chức năng đối với khách hàng là thành viên: Đăng nhập, quản lý và kiểm tra trạng thái đơn hàng, quản lý những sản phẩm yêu thích đã lưu lại, mua hàng với nhiều loại hàng khách nhau/1 lần mua
++ Chức năng đối với khách hàng vãng lai: Mua hàng với 1 loại hàng duy nhất/1 lần mua
+
+III. Thiết kế
+Vẽ sơ đồ sitemap và wireframe bằng công cụ draw.io, astah
+
+IV. Nội dung HTML, CSS, JavaScript đã xây dựng
+(Nội dung được đính kèm trong file code)
+
+V. Kiểm thử
+1. Mục tiêu phát hiện lỗi trong quá trình thiết kế
+2. Cách thức xây dựng data validation
++ Data validation xây dựng cho trang đăng kí thành viên được xác định như sau:
+Trang đăng kí gồm có các trường Email(*), Mật khẩu(*), Họ tên(*), Địa chỉ, Số điện thoại(*), Thành phố, Giới tính. Trong đó, các trường có dấu (*) là các trường không được để trống thông tin và phù hợp với các tiêu chí sau đây:
+-Email: 
+-Mật khẩu: Mật khẩu là chuỗi các kí tự chứa số hoặc chữ và độ dài tối thiểu là 8 chữ cái, bắt đầu bằng chữ và không có chứa kí tự đặc biệt
+-Họ tên: Họ tên phải là một chuỗi bằng các kí tự chữ cái, không có chứa số hay kí tự đặc biệt nào
+-Số điện thoại: Số điện thoại là chỉ bao gồm các số có độ dài là 10 kí tự và bắt đầu bằng số 0
