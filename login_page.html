@@ -38,20 +38,24 @@
 		</div>
 	</header>
 	<main>
-		<p><span style="color: #3498db";>Trang chủ</span> > Đăng nhập tài khoản</p>
+		<p><a href="index.html"><span style="color: #3498db";>Trang chủ</span></a> <i class="fas fa-caret-right"></i> Đăng nhập tài khoản</p>
 		<div id="login_area">
-			<h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+			<h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
 			<p>Nếu bạn đã có tài khoản, vui lòng đăng nhập</p>
 			<form action="#" method="post">
-				<div>
+				<div class="row">
 					<input type="text" name="email" id="txtEmail" placeholder="E-mail">
-					<br>
-					<input type="password" name="password" id="txtPassword" placeholder="Mật khẩu">
+					<i class="fas fa-user"></i>
 				</div>
-				<input type="checkbox" name="cb_Remember" id="cb_Remember">
-				<label for="cb_Remember">Nhớ tôi lại</label>
-				<br>
-				<div id="row">
+				<div class="row">
+					<input type="password" name="password" id="txtPassword" placeholder="Mật khẩu">
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="row" style="padding-left: 15px; margin-bottom: 15px;">
+					<input type="checkbox" name="cb_Remember" id="cb_Remember">
+					<label for="cb_Remember" style="font-weight: bold; cursor: pointer;">Nhớ tôi lại</label>
+				</div>
+				<div class="row">
 					<input type="submit" name="submit" value="ĐĂNG NHẬP" id="btn_submit">
 					<a href="#">Bạn quên mật khẩu?</a>
 					<a href="#">Yêu cầu kích hoạt lại tài khoản?</a>

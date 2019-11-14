@@ -1,5 +1,6 @@
 main p {
 	color: #1C0C06;
+	margin-bottom: 15px;
 }
 
 main #login_area {
@@ -13,3 +14,33 @@ main #register_area {
 	width: 50%;
 	height: 500px;
 }
+
+#login_area h2 {
+	background-color: #f5791f;
+	color: #fff;
+	padding: 7px 0 7px 7px;
+	margin-right: 30px;
+}
+
+#login_area p {
+	margin: 15px 0 15px 15px;
+}
+
+#login_area input[type="text"],
+#login_area input[type="password"] {
+	display: inline-block;
+	width: 80%;
+	border: none;
+	margin: 20px 5px 15px 15px;
+	height: 35px;
+	font-size: 16px;
+	padding-left: 15px;
+	border: 1px solid #e6e6e6;
+}
+
+#login_area input[type="checkbox"] {
+	border: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+
+
