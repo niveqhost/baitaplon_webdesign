@@ -140,6 +140,11 @@ main #menu ul li {
 	border-top: 1px solid #aca2a2;
 }
 
+main #menu ul li:hover a,
+main #menu ul li:hover i {
+	color: #a3c42d;
+} 
+
 main #menu ul li a {
 	color: #fff;
 }

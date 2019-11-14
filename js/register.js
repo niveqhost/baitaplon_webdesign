@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 	let form = document.getElementById("register_form");
 
-	function validateForm(e) {
-		// e.preventDefault();
+	function validateForm(event) {
 
 		let email = document.getElementById('txtEmail').value;
 		let msgEmail = document.getElementById('msgEmail');
@@ -20,18 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		/* --- Regurlar Expression --- */
 		let phoneCheck = /^[0][0-9]{9}$/;
-		let passCheck = /^[0-9a-zA-Z]{8,}$/;
-		//let emailCheck = //;
-
+		let passCheck = /^[A-Za-z][0-9a-zA-Z]{7,}$/;
+		let emailCheck = //;
+		let nameCheck = /[^_#&<>\"~;$^%{}?\d]{1,6}$/g;
 		/* --- Kiểm tra trường email --- */
 		if (email == "") {
 			msgEmail.style.display = "block";
-			msgEmail.innerText = "Bạn chưa nhập địa chỉ E-mail";
+			msgEmail.innerText = "Bạn chưa nhập địa chỉ e-mail";
 			count += 1;
 		}
 		else {
 			if (emailCheck.test(email) == false) {
-				msgEmail.innerText = "E-mail chưa đúng định dạng";
+				msgEmail.innerText = "Định dạng e-mail không phù hợp.";
 				count += 1;
 			}
 			else{
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		else {
 			if( passCheck.test(password) == false ) {
 				msgPassword.style.display = "block";
-				msgPassword.innerText = "Mật khẩu ít nhất phải 8 kí tự";
+				msgPassword.innerHTML = "Mật khẩu ít nhất phải có 8 kí tự chứa chữ và số <br style='display:block;'> bắt đầu bằng chữ cái và không có các kí tự đặc biệt";
 				count += 1;
 			}
 			else {
@@ -87,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		/* --- Dừng hành động trả kết quả về server của form --- */
 		if(count != 0) {
-			e.preventDefault();
+			event.preventDefault();
 		}
 		else {
 			alert("Bạn đã đăng kí thành công!");
