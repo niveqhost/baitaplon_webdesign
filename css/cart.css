@@ -1,0 +1,54 @@
+main {
+	height: 450px !important;
+}
+
+main hr {
+	margin: 10px 0;
+}
+
+#cart-table table{
+	border: 1px solid #0C5D95;
+	width:100%;
+	padding-top: 20px;
+}
+#cart-table table tr td{
+	border: 1px solid #0C5D95;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+#cart-table table #title{
+	background-color: #a1aaaf;
+	color: #fff;
+	height: 35px;
+	font-size: 15px;
+}
+#cart-table table #title td{
+	padding-left: 10px;
+}
+
+#cart-table td.item-name{
+	color: #0C5D95;
+}
+
+#cart-table a{
+	font-size: 16px;
+	padding: 10px;
+	background-color: #3498db;
+	color: #fff;
+    line-height: 40px;
+    margin-left: 9px;
+    border-radius: 5px;
+}
+
+#cart-table #btn-buy {
+	background-color: #21bf64;
+}
+
+#cart-table #btn-buy:hover {
+	background-color: #22a87c;
+}
+
+#cart-table #btn-order:hover {
+	background-color: #2980b9;
+}
