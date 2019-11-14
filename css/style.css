@@ -159,8 +159,36 @@ main #product {
 
 footer {
 	height: 190px;
-	background-color: #D3D3D3;
+	background-color: #F2F0F0;
 	margin-bottom: 10px;
+}
+
+footer a {
+	color: #3498db;
+}
+
+footer h4 {
+	margin: 10px 0;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+footer #contact_us p {
+	display: inline-block;
+}
+
+footer #contact_us br {
+	display: block;
+}
+
+footer #contact_us i {
+	margin-left: 15px;
+}
+
+footer p:hover a {
+	color: #f00;
 }
 
 #service, #policy, #about, #contact_us {
