@@ -2,24 +2,29 @@ BÁO CÁO BÀI TẬP LỚN MÔN THIẾT KẾ WEB
 
 I. Giới thiệu sơ bộ về hệ thống
 1. Sơ lược về hệ thống
+Website giới thiệu sản phẩm và bán các sản phẩm điện máy trực tuyến
 2. Nghiệp vụ của hệ thống ( giới thiệu bài toán )
-Hệ thống thiết kế nhằm phục vụ mọi đối tượng khách hàng có nhu cầu mua sắm tại siêu thị và đáp ứng yêu cầu quản lí siêu thị của chủ siêu thị
+Do nhu cầu mở rộng thị trường cũng như quảng bá sản phẩm, và nâng cao chất lượng, tăng doanh thu, chủ siêu thị có mong muốn xây dựng 1 website để giới thiệu sản phẩm và bán hàng trực tuyến, cũng như hỗ trợ khách hàng các thông tin cần thiết
 3. Mục đích yêu cầu
+Mục đích:
+Xây dựng một website bán hàng trực tuyến đơn giản, thân thiện, dễ sử dụng, cho phép khách hàng xem thông tin sản phẩm và đặt hàng qua mạng.
+Yêu cầu:
+Giao diện hài hòa thân thiện, giúp người dùng dễ dàng sử dụng.
+Trang chủ hiển thị danh sách các sản phẩm giúp cho người dùng có thể dễ dàng biết các sản phẩm kinh doanh của siêu thị
+Khách hàng có thể tìm kiếm thông tin chi tiết về các sản phẩm điện máy mà họ quan tâm
+Khách hàng có thể chọn mua các sản phẩm mà họ cần dựa trên khả năng tài chính và nhu cầu cần thiết bằng cách thêm vào giỏ hàng
+Có chức năng đăng kí đăng nhập
 
 II. Khảo sát phân tích
 1. Tìm hiểu các website đã có cùng chủ đề
-Trang web được thiết kế dựa trên mẫu có sẵn được tham khảo tại địa chỉ: https://pico.vn
+Website được lấy ý tưởng và dữ liệu từ trang: https://pico.vn
 2. Trình bày các đối tượng sử dụng
-Các đối tượng sử dụng hệ thống được xác định như sau:
-+ Chủ siêu thị
-+ Khách mua hàng
--Khách hàng là thành viên
--Khách vãng lai
+Website được xây dựng để phục vụ hai đối tượng chính là admin (nhà quản trị) và khách hàng (khách vãng lai, khách hàng là thành viên)
 
 3. Trình bày các chức năng cơ bản cho từng đối tượng
-+ Chức năng đối với chủ siêu thị: Quản lý đơn hàng, Quản lý sản phẩm
-+ Chức năng đối với khách hàng là thành viên: Đăng nhập, quản lý và kiểm tra trạng thái đơn hàng, quản lý những sản phẩm yêu thích đã lưu lại, mua hàng với nhiều loại hàng khách nhau/1 lần mua
-+ Chức năng đối với khách hàng vãng lai: Mua hàng với 1 loại hàng duy nhất/1 lần mua
++ Chức năng đối với nhà quản trị: Đăng nhập website, xem cập nhật và xóa thông tin sản phẩm
++ Chức năng đối với khách hàng là thành viên: Đăng nhập, đăng xuất, đổi mật khẩu, đặt mua nhiều sản phẩm khác nhau trong một lần mua, được hưởng một số quyền lợi ưu đãi
++ Chức năng đối với khách hàng vãng lai: Xem thông tin sản phẩm, đăng kí thành viên, mỗi lần chỉ được đặt mua một sản phẩm
 
 III. Thiết kế
 Vẽ sơ đồ sitemap và wireframe bằng công cụ draw.io, astah
