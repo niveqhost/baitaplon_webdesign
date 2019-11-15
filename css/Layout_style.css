@@ -124,18 +124,18 @@ main #menu {
 	height: 520px;
 }
 
-main #menu div.category {
+main #menu div.menu_category {
 	border-bottom: 1px solid #aca2a2;
 	background-color: #000;
 	line-height: 35px;
 	padding-left: 5px;
 }
 
-main #menu div.category:last-child {
+main #menu div.menu_category:last-child {
 	border-top: 1px solid #aca2a2;
 }
 
-main #menu div.category p {
+main #menu div.menu_category p {
 	color: #a3c42d;
 }
 
@@ -157,8 +157,7 @@ main #product {
 	position: absolute;
 	right: 0;
 	width: 80%;
-	border: 1px solid green;
-	height: 520px;
+	height: 750px;
 }
 
 footer {
