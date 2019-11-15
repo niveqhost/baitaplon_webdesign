@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		/* --- Regurlar Expression --- */
 		let phoneCheck = /^[0][0-9]{9}$/;
 		let passCheck = /^[A-Za-z][0-9a-zA-Z]{7,}$/;
-		// let emailCheck = //;
+		let emailCheck = /^[a-z]([a-zA-Z0-9_\.\-])+\@[a-z0-9]{2,4}(\.[a-z0-9]{2,}){1,2}$/;
 		let nameCheck = /[^_#&<>\"~;$^%{}?\d]{1,6}$/g;
 
 		/* --- Kiểm tra trường email --- */
