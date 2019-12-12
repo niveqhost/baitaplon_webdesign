@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" width="device-width, initial-scale=1.0">
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/all.min.css">
+	<style type="text/css">
+		a {
+			text-decoration: none !important;
+		}
+
+		#wrapper {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		#wrapper div#link {
+			padding: 15px 0;
+		}
+
+		#wrapper div#link a span {
+			padding: 0 10px;
+		}
+
+		#wrapper div#link b {
+			padding: 0 15px ;
+		}
+
+		#loginForm input {
+			border: 1px solid #6495ed;
+			border-radius: 5px;
+			width: 100%;
+			padding: 5px 0 5px 10px; 
+		}
+
+		#loginForm label {
+			display: block;
+			margin: 5px 0;
+		}
+
+		#loginForm #btnSubmit {
+			cursor: pointer;
+			border: none;
+			background: #E0E1E2;
+			padding: 8px;
+			width: 100px;
+			border-radius: 5px;
+			margin-top: 10px;
+			font-weight: 600;
+			color: rgba(0,0,0,.8);
+		}
+
+		#loginForm #btnSubmit:hover {
+			background-color: #CACBCD;
+		}
+
+		#loginForm div p {
+			color: #f00;
+			font-style: italic;
+			font-weight: 500;
+		}
+
+		#facebook-button, #google-button, #twitter-button {
+			text-align: center;
+			margin: 15px 0;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		#facebook-button i, #google-button i, #twitter-button i {
+			margin-right: 5px;
+		}
+
+		#facebook-button {
+			background-color: #3B5998;
+			color: #FFF;
+		}
+
+		#facebook-button:hover {
+			background-color: #304d8a;
+		}
+
+		#google-button {
+			background-color: #DC4A38;
+			color: #FFF;
+		}
+
+		#google-button:hover {
+			background-color: #de321d;
+		}
+
+		#twitter-button {
+			background-color: #0084B4;
+			color: #FFF;
+		}
+
+		#twitter-button:hover {
+			background-color: #00719b;
+		}
+	</style>
+</head>
+<body>
+	<hr>
+	<div id="wrapper">
+		<div id="link">
+			<a href="#"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+			<i class="fas fa-angle-right"></i><b>Đăng nhập</b> 
+		</div>
+		<div class="col-xl-6" style="float: left;"></div>
+		<div class="col-xl-6" style="float: right;">
+			<h4><i class="fas fa-user-plus" style="padding-right: 10px;"></i>ĐĂNG NHẬP</h4>
+			<form action="" id="loginForm">
+				<div>
+					<label>Email đăng nhập</label>
+					<input type="text" name="email">
+					<p>Hãy nhập email</p>
+				</div>
+				<div>
+					<label>Mật khẩu</label>
+					<input type="text" name="password">
+					<p>Hãy nhập mật khẩu</p>
+				</div>
+				<div>
+					<a href="#">Quên mật khẩu?</a>
+					<span style="color: #8F8A8A;">|</span>
+					<a href="#">Chưa có tài khoản?</a>
+				</div>
+				<div><button type="submit" name="submit" id="btnSubmit">Đăng nhập</div>
+			</form>
+			<div id="facebook-button"><i class="fab fa-facebook-square"></i>Đăng nhập với Facebook</div>
+			<div id="twitter-button"><i class="fab fa-twitter"></i>Đăng nhập với Twitter</div>
+			<div id="google-button"><i class="fab fa-google-plus-g"></i>Đăng nhập với Google</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</body>
+</html>
